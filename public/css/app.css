@@ -14638,4 +14638,14 @@ section {
   padding: 1vh 1vw;
 }
 
+.marhba {
+  border: 5px solid black;
+  text-align: center;
+}
+
+.marhba * {
+  margin: 0;
+  padding: 0;
+}
+
 /*# sourceMappingURL=app.css.map */

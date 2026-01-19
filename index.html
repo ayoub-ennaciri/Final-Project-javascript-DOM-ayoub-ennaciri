@@ -15,6 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Satisfy&display=swap"
       rel="stylesheet"
     />
+    <link rel=stylesheet href=./public/css/caroussel.css>
     <link rel=stylesheet href=./public/css/app.css>
     <link rel=stylesheet href=./public/css/modal.css>
   </head>
@@ -134,7 +135,7 @@
           <div class="m-1 d-flex gap-1 align-items-center justify-content-between">
             <a class="bg-sp-orange rounded-pill text-white px-2 py-1 fs-6">book a Table</a>
             <a href="#" class="modalTriger1 text-dark">watch a video </a>
-            <div class="modal"><iframe width="560" height="315" src="https://www.youtube.com/embed/zW9Lfh-kp4w?si=pCztIZEUy6bYE5Zg" title="YouTube video player" frameborder="0" allow="accelerometer; &autoplay=1 autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+            <!-- <div class="modal"><iframe width="560" height="315" src="https://www.youtube.com/embed/zW9Lfh-kp4w?si=pCztIZEUy6bYE5Zg" title="YouTube video player" frameborder="0" allow="accelerometer; &autoplay=1 autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div> -->
           </div>
         </div>
     </section>
@@ -224,42 +225,51 @@
 
     <!-- *why us -->
     <section class="d-flex container flex-column align-items-center">
-      <div class="my-1 rounded-pill fw-semibold text-sp-orange bg-sp-orange fw-semiboldm-10 px-1 d-flex justify-content-center bg-opacity-25">
-        Why Us
-      </div>
-      <p class="my-1 display-6 text-center satisfy-regular">
-        Why choose <span class="text-sp-orange">Our Restaurant</span>
-      </p>
+     
       <div class="row d-flex justify-content-center gap-2 align-items-center">
-        <div class="col-lg-3 shadow p-2 hover-bg-sp-orange card">
-          <div class="py-1 text-sp-orange fs-3 fw-semibold">01</div>
-          <div class="py-1 satisfy-regular fs-3 bg-">Lorem, ipsum</div>
+
+        <div class="col-lg-3 shadow p-2 bg-sp-orange ">
+          <h1 class="py-1 text-white fs-3 fw-semibold">Why Choose Yummy</h1>
+          <div class="py-1 text-white">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit Asperiores dolores sed et. Tenetur quia eos. Autem tempore quibusdam vel necessitatibus optio ad corporis. 
+          </div>
+          <div class="text-center text-white">
+            <a href="#" class="px-2 py-1 border-0 rounded-pill bg-bad-grey bg-danger-hover">Learn more</a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 shadow p-2 text-center ">
+          <div class="py-1 text-sp-orange fs-3 fw-semibold"><i class="bi bi-clipboard-data"></i></div>
+          <div class="py-1  fs-3 bg-">Corporis voluptates officia eiusmod</div>
           <div class="py-1">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem,
             distinctio?
           </div>
         </div>
-        <div class="col-lg-3 shadow p-2 hover-bg-sp-orange card">
-          <div class="py-1 text-sp-orange fs-3 fw-semibold">02</div>
-          <div class="py-1 satisfy-regular fs-3 bg-">Lorem, ipsum</div>
+
+        <div class="col-lg-3 shadow p-2  text-center ">
+          <div class="py-1 text-sp-orange fs-3 fw-semibold"><i class="bi bi-gem"></i></div>
+          <div class="py-1  fs-3 bg-">Ullamco laboris ladore lore pan</div>
           <div class="py-1">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem,
             distinctio?
           </div>
         </div>
-        <div class="col-lg-3 shadow p-2 hover-bg-sp-orange card">
-          <div class="py-1 text-sp-orange fs-3 fw-semibold">03</div>
-          <div class="py-1 satisfy-regular fs-3 bg-">Lorem, ipsum</div>
+
+        <div class="col-lg-3 shadow p-2 hover-bg-sp-orange text-center">
+          <div class="py-1 text-sp-orange fs-3 fw-semibold"><i class="bi bi-inboxes"></i></div>
+          <div class="py-1  fs-3 bg-">Ullamco laboris ladore lore pan</div>
           <div class="py-1">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem,
             distinctio?
           </div>
         </div>
+
       </div>
     </section>
 
     <!-- *menu -->
-    <section class="container d-flex justify-content-center flex-column align-items-center">
+    <!-- <section class="container d-flex justify-content-center flex-column align-items-center">
       <p
         class="rounded-pill fw-semibold text-sp-orange bg-sp-orange fw-semiboldm-10 w-7 d-flex align-items-center justify-content-center px-2 bg-opacity-25"
       >
@@ -445,7 +455,51 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
+    
+    <!-- *carousssel 1 -->
+
+    <div class="tes">
+      <div class="text-center">
+        <h2 class="">TESTIMONIALS</h2>
+        <h1 class="">What Are They <span class="text-sp-orange">Saying About Us</span></h1>
+      </div>
+
+      <div class="d-flex justify-content-between align-items-center">
+        <button data-caro="car3"  class="prev">prev</button>
+        <div class="caroussel" id="car3">
+          <div class="track">
+            <div class="slide d-flex flex-column" >
+              <div class="">
+                <p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum id culpa tempora repellat deleniti vel. Dignissimos, quod earum, soluta quaerat praesentium nam molestiae accusamus eum incidunt veniam delectus natus at!</p>
+              </div>
+              <img class=" rounded-circle" src="./public/images/testimonials/testimonials-1.jpg" alt="">
+            </div>
+            <div class="slide d-flex flex-column" >
+              <div class="">
+                <p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum id culpa tempora repellat deleniti vel. Dignissimos, quod earum, soluta quaerat praesentium nam molestiae accusamus eum incidunt veniam delectus natus at!</p>
+              </div>
+              <img class=" rounded-circle" src="./public/images/testimonials/testimonials-2.jpg" alt="">
+            </div>
+            <div class="slide d-flex flex-column" >
+              <div class="">
+                <p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum id culpa tempora repellat deleniti vel. Dignissimos, quod earum, soluta quaerat praesentium nam molestiae accusamus eum incidunt veniam delectus natus at!</p>
+              </div>
+              <img class=" rounded-circle" src="./public/images/testimonials/testimonials-3.jpg" alt="">
+            </div>
+            <div class="slide d-flex flex-column" >
+              <div class="">
+                <p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum id culpa tempora repellat deleniti vel. Dignissimos, quod earum, soluta quaerat praesentium nam molestiae accusamus eum incidunt veniam delectus natus at!</p>
+              </div>
+              <img class=" rounded-circle" src="./public/images/testimonials/testimonials-4.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        
+        <button data-caro="car3"  class="next">next</button>
+    </div>
+    
+    
     <!-- *beer -->
      <!-- <section class="">
         <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
@@ -618,12 +672,12 @@
       </div>
 
 <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
+<!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog"> -->
 
 
  
-      <div class=" vw-50">
+      <!-- <div class=" vw-50">
             <div id="galleyCarousel" class=" w-100 modal-foote carousel slide">
               <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -655,7 +709,7 @@
       </div>   </div>
             
 
-  </div>
+  </div> -->
 </div>  <button class="p-0 w-5 h-10 top-50 carousel-control-prev" type="button" data-bs-target="#galleyCarousel" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
@@ -906,5 +960,5 @@
     </footer>
     <script src="./public/js/app.js"></script>
   </body>
-              <a href="#hero" class="position-fixed bg-sp-orange fs-2 text-light  bottom-10 end-10 border-0  rounded-2  z-3"><i class="bi bi-arrow-up"></i></a>
+              <!-- <a href="#hero" class="position-fixed bg-sp-orange fs-2 text-light  bottom-10 end-10 border-0  rounded-2  z-3"><i class="bi bi-arrow-up"></i></a> -->
 </html>

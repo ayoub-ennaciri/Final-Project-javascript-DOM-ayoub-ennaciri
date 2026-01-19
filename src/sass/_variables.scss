@@ -2,13 +2,13 @@
 @import "../../node_modules/bootstrap/scss/variables";
 
 
-$sp_orange : #ce1212 ;
+$sp_red : #ce1212 ;
 $brown     : #1e160d;
 $bad-grey  : #f9f9f9;
 $gray : #37373f ;
 $hero-bg : #f2f2f2;
 
-$color : ("sp-orange":$sp-orange , "brown": $brown, 
+$color : ("sp_red":$sp_red , "brown": $brown, 
 "bad-grey" : $bad-grey, "gray" : $gray, "hero-bg" :$hero-bg );
 
 $theme-colors: map-merge($color , $theme-colors);

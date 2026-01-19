@@ -168,9 +168,9 @@ let formBtn = document.querySelector(".formBtn")
 let form = document.querySelector(".form")
 let client = document.querySelector("#client")
 let meals = document.querySelector(".meals")
+let time = document.querySelector("#time")
 let submit = document.querySelector("#submit")
 let cancel = document.querySelector("#cancel")
-let time = document.querySelector("#time")
 let out = document.querySelector(".out")
 
 
@@ -193,7 +193,7 @@ formBtn.addEventListener( "click" , (e)=> {
 e.preventDefault()
     form.style.top = "0vh"
     form.style.display = "flex"
-    modal.style.transform = "all 0.4s ease" 
+    form.style.transform = "all 0.4s ease" 
 })
 
 cancel.onclick = () =>
@@ -206,11 +206,14 @@ cancel.onclick = () =>
 submit.onclick = () =>
 {
 console.log(Book.books.findIndex(e => e.time == time.value ));
-
-    if(Book.books.findIndex(e => e.time == time.value ) != -1)
+    console.log(client.value )
+    if(client.value == "" || time.value == "" || meals.value == "" )
+    {
+        out.textContent = "fill all fields"
+    }
+    if(Book.books.findIndex(e => e.time == time.value ) != -1 )
     {
         out.style.color = "red"
-        
         out.textContent = "cant book at this time"
     }
     else
@@ -220,5 +223,4 @@ console.log(Book.books.findIndex(e => e.time == time.value ));
         out.textContent = "booked"
         console.table(Book.books)
     }
-    // Book.books.findIndex(e => e.name = "ayoub" )
 }

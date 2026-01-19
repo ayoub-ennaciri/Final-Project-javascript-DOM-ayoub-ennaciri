@@ -162,3 +162,63 @@ while(prev[i])
   prev[i].addEventListener("click", previous)
   i++
 }
+
+// form
+let formBtn = document.querySelector(".formBtn")
+let form = document.querySelector(".form")
+let client = document.querySelector("#client")
+let meals = document.querySelector(".meals")
+let submit = document.querySelector("#submit")
+let cancel = document.querySelector("#cancel")
+let time = document.querySelector("#time")
+let out = document.querySelector(".out")
+
+
+class Book  {
+    static books = [];  
+    constructor(name,meal,time)
+    {
+        this.meal = meal
+        this.name = name
+        this.time = time
+        Book.books.push(this)
+    }
+    
+}
+
+let tmp
+
+
+formBtn.addEventListener( "click" , (e)=> {
+e.preventDefault()
+    form.style.top = "0vh"
+    form.style.display = "flex"
+    modal.style.transform = "all 0.4s ease" 
+})
+
+cancel.onclick = () =>
+{
+    form.style.top = "-150vh"
+}
+
+
+
+submit.onclick = () =>
+{
+console.log(Book.books.findIndex(e => e.time == time.value ));
+
+    if(Book.books.findIndex(e => e.time == time.value ) != -1)
+    {
+        out.style.color = "red"
+        
+        out.textContent = "cant book at this time"
+    }
+    else
+    {
+        let user = new Book(client.value, meals.value,time.value)
+        out.style.color = "green"
+        out.textContent = "booked"
+        console.table(Book.books)
+    }
+    // Book.books.findIndex(e => e.name = "ayoub" )
+}

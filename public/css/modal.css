@@ -3,17 +3,6 @@
     padding: 0px;
 }
 
-/* body
-{
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 50vh;
-} */
-
-
-
 
 .modal
 {   
@@ -34,4 +23,17 @@
     background-color: red;
     color: white;
     border: none;
+}
+
+
+.form
+{
+    top: 0;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(58, 56, 56, 0.719);
+    display: none;
+    align-items: center;
+    justify-content: center;
 }

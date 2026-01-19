@@ -16,6 +16,7 @@
       rel="stylesheet"
     />
     <link rel=stylesheet href=./public/css/app.css>
+    <link rel=stylesheet href=./public/css/modal.css>
   </head>
   <body>
 
@@ -119,14 +120,23 @@
         </nav>
         <div class="">
             <button class="top-header-right-button">Book a table</button>
-  
         </div>
       </div>
 
     </header>
 <!-- *hero carousel -->
-     <section id="hero" class=" vh-100">
-        
+     <section id="hero" class="lg vh-100 mb-8">
+        <div class="w-100"><img class="w-100 p-2" src="./public/images/hero-img.png" alt=""></div>
+        <div class="">
+          <h1 class="m-1">Enjoy Your Healthy</h1>
+          <h1 class="mx-1">Delicious Food</h1>
+          <p class="m-1">We are team of talented designers making websites with Bootstrap</p>
+          <div class="m-1 d-flex gap-1 align-items-center justify-content-between">
+            <a class="bg-sp-orange rounded-pill text-white px-2 py-1 fs-6">book a Table</a>
+            <a href="#" class="modalTriger1 text-dark">watch a video </a>
+            <div class="modal"><iframe width="560" height="315" src="https://www.youtube.com/embed/zW9Lfh-kp4w?si=pCztIZEUy6bYE5Zg" title="YouTube video player" frameborder="0" allow="accelerometer; &autoplay=1 autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+          </div>
+        </div>
     </section>
 
     <!-- *vedio section -->
@@ -884,7 +894,7 @@
         <div class="">Designed by BootstrapMade</div>
       </div>
     </footer>
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="./public/js/app.js"></script>
   </body>
               <a href="#hero" class="position-fixed bg-sp-orange fs-2 text-light  bottom-10 end-10 border-0  rounded-2  z-3"><i class="bi bi-arrow-up"></i></a>
 </html>

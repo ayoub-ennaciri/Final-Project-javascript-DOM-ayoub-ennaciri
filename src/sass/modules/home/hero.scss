@@ -1,3 +1,5 @@
+@import url("../../_variables.scss");
+
 .margin{
     margin-inline: 10vw;
 }
@@ -36,7 +38,8 @@ font-size: 16px;
 {
     margin: 0;
   font-size: 64px;
-  font-weight: 700
+  font-weight: 700;
+  font-family: amatic;
 }
 
 .videoModal
@@ -50,4 +53,23 @@ font-size: 16px;
     position: fixed;
     justify-content: center;
     align-items: center;
+    z-index: 90;
+}
+
+.hero
+{
+    background-color: #f2f2f2;
+    width: 100vw;
+}
+
+@media (min-width:992px) {
+    .heroImg
+    {
+        width: 40vw;
+        height: 40vw;
+    }
+    .margin
+    {
+        margin-inline: 3vw;
+    }
 }

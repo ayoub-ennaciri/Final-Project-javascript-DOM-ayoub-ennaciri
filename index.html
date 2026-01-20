@@ -34,19 +34,21 @@
    <!-- *fin navbar -->
 
   <!-- *hero -->
-  <section class="hero margin  ">
-    <div class="heroImg">
-      <img src="./public/images/hero-img.png" alt="">
-    </div>
-    <div class="">
-      <h1 class="healthy">Enjoy Your Healthy <br>Delicious Food</h1>
-      <p class=" team">We are team of talented designers making websites with Bootstrap</p>
-      <div class="d-flex align-items-center">
-        <button class="bookAtable secoundBook" style="padding: 10px 28px 12px 28px;">Book a Table </button>
-        <a class="watch hover-text-sp_red d-flex align-items-center gap-1">
-          <i class=" text-sp_red fs-2 bi bi-play-circle"></i>
-          <span class="">Watch Video</span>
-        </a>
+  <section class="hero   ">
+    <div class="margin pb-4 row d-lg-flex justify-content-between flex-row-reverse">
+      <div class="heroImg ">
+        <img src="./public/images/hero-img.png" alt="">
+      </div>
+      <div class="col-lg-5">
+        <h1 class="healthy">Enjoy Your Healthy <br>Delicious Food</h1>
+        <p class=" team">We are team of talented designers making websites with Bootstrap</p>
+        <div class="d-flex align-items-center">
+          <button class="bookAtable secoundBook" style="padding: 10px 28px 12px 28px;">Book a Table </button>
+          <a class="watch hover-text-sp_red d-flex align-items-center gap-1">
+            <i class=" text-sp_red fs-2 bi bi-play-circle"></i>
+            <span class="">Watch Video</span>
+          </a>
+        </div>
       </div>
     </div>
   </section>
@@ -54,10 +56,55 @@
 
   <!-- *video modal -->
   <div class="videoModal">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/_L-ff9_aCIg?si=2FOIZrUcYK-5aR2f" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/_L-ff9_aCIg?si=2FOIZrUcYK-5aR2f" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
   </div>
   <!-- *fin video modal -->
 
+  <!-- *about us -->
+  <section class="">
+    <div class="aboutUs d-flex flex-column text-center my-4">
+      <h2 class="about">ABOUT US</h2>
+      <p class="learn">Learn More <span class="text-sp_red">About Us</span></p>
+    </div>
+
+      <div class=" d-lg-flex info gap-6 ">
+
+        <div class="infoLeft">
+          <div class="aboutImg w-100  ">
+            <img class="w-100 " src="./public/images/about.jpg" alt="">
+            <div class="number d-flex flex-column align-items-center justify-content-center   ">
+              <h3 class="fw-bolder">Book a table</h3>
+              <p class="fs-1 fw-bolder text-sp_red">+1 5589 55488 55</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="infoRight d-flex flex-column gap-1 w-100">
+          <p class=""> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+          <div class="d-flex gap-1  ">
+            <i class="fs-5 text-sp_red bi bi-check-circle-fill"></i>
+            <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+          </div>
+          <div class="d-flex gap-1  ">
+            <i class="fs-5 text-sp_red bi bi-check-circle-fill"></i>
+            <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span>
+          </div>
+          <div class="d-flex gap-1  ">
+            <i class="fs-5 text-sp_red bi bi-check-circle-fill"></i>
+            <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</span>
+          </div>
+          <p class="">Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident </p>
+          <div class=" position-relative">
+            <img class="w-100 " src="./public/images/about-2.jpg" alt="">
+            <a href="#" class="rounded-circle position-absolute top-45 start-45 play bg-sp_red">
+              <i class="fs-2 text-white bi bi-play-fill"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+   </section>
+  <!-- *fin about us  -->
     
   <script src="./public/js/app.js"></script>
 </body>

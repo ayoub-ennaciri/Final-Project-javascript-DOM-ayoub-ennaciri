@@ -39,10 +39,18 @@ X.addEventListener("click", (e) =>
 // *hero vedio 
 let watch = document.querySelector(".watch")
 let videoModal = document.querySelector(".videoModal")
+let play = document.querySelector(".play")
 
-watch.addEventListener("click", ()=>
+watch.addEventListener("click", (e)=>
 {
     videoModal.style.display = "flex";
+    e.preventDefault()
+})
+
+play.addEventListener("click", (e)=>
+{
+    videoModal.style.display = "flex";
+    e.preventDefault()
 })
 
 videoModal.addEventListener("click", ()=>

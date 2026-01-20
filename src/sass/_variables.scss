@@ -1,6 +1,10 @@
 @import "../../node_modules/bootstrap/scss/functions";
 @import "../../node_modules/bootstrap/scss/variables";
 
+@font-face {
+  font-family: amatic;
+  src: url(../../public/fonts/AmaticSC-Regular.ttf);
+}
 
 $sp_red : #ce1212 ;
 $brown     : #1e160d;

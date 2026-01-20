@@ -4,6 +4,10 @@ a{
     text-decoration: none;
 }
 
+body{
+    position: relative;
+}
+
 .bookAtable
 {
     background-color: $sp_red ;
@@ -14,11 +18,31 @@ a{
     font-size: 14px;
 }
 
+.bookAtable:hover
+{
+    background-color: #ce121280;
+}
+
+.mod  
+{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 0, 0, 0.384);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
 .links
 {
     display: flex;
     gap: 40px;
     display: none;
+}
+.navbar
+{
+    box-shadow: 0px 0.5px 10px;
 }
 
 .yummy
@@ -39,4 +63,15 @@ a{
     font-size: 28px;
     color: gray;
     margin-left: 10px;
+}
+
+.X
+{
+    display: none;
+    position: absolute;
+    font-size: 32px;
+    top :15px;
+    right:15px;
+    color: white;
+    margin: 40px;
 }

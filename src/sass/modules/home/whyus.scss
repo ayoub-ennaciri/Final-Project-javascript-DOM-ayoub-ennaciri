@@ -1,0 +1,32 @@
+.whyUs
+{
+    background-color: #f2f2f2;
+}
+
+.icons
+{
+    width: 72px;
+    height: 72px;
+    font-size: 32px;
+    background-color: #fdf3f3;
+    color: $sp_red;
+    padding: 72px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.card
+{
+    height: 80vh;
+    padding-inline: 10vw;
+}
+.card:hover
+{
+
+    .icons
+    {
+        background-color: $sp_red;
+        color: #fdf3f3  ;
+    }
+}
+

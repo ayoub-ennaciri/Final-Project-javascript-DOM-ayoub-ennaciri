@@ -1,0 +1,53 @@
+.margin{
+    margin-inline: 10vw;
+}
+
+.watch
+{
+font-size: 16px;
+  transition: 0.5s;
+  margin-left: 25px;
+  color: $gray;
+}
+
+.watch:hover{
+    color: $sp_red;
+}
+
+.heroImg
+{
+    width: 70vw;
+    height: 70vw;
+}
+
+.heroImg img{
+    width: 100%;
+    height: 100%;
+}
+
+.team
+{
+    margin: 5px 0 30px 0;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.healthy
+{
+    margin: 0;
+  font-size: 64px;
+  font-weight: 700
+}
+
+.videoModal
+{
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    // right: 0;
+    background-color: rgba(39, 37, 37, 0.411);
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+}

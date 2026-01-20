@@ -57,3 +57,77 @@ videoModal.addEventListener("click", ()=>
 {
     videoModal.style.display = "none";
 })
+
+// *menu
+
+let starters = document.querySelector(".starters");
+let breake = document.querySelector(".breake");
+let lunch = document.querySelector(".lunch");
+let dinner = document.querySelector(".dinner");
+let option1 = document.querySelector(".option1");
+let option2 = document.querySelector(".option2");
+let option3 = document.querySelector(".option3");
+let option4 = document.querySelector(".option4");
+
+option1.addEventListener("click", (e)=>
+{
+    e.preventDefault()
+    console.log("hi");
+    breake.style.display = "none"
+    lunch.style.display = "none"
+    dinner.style.display = "none"
+    starters.style.display ="block"
+
+    option1.style.borderBottom = "1px solid #ce1212"
+    option2.style.borderBottom = "1px solid gray"
+    option3.style.borderBottom = "1px solid gray"
+    option4.style.borderBottom = "1px solid gray"
+})
+option2.addEventListener("click", (e)=>
+{
+    e.preventDefault()
+    console.log("hi");
+    starters.style.display = "none"
+    lunch.style.display = "none"
+    dinner.style.display = "none"
+    breake.style.display ="block"
+    option1.style.borderBottom = "1px solid gray"
+    option2.style.borderBottom = "1px solid #ce1212"
+    option3.style.borderBottom = "1px solid gray"
+    option4.style.borderBottom = "1px solid gray"
+})
+option3.addEventListener("click", (e)=>
+{
+    e.preventDefault()
+    console.log("hi");
+    breake.style.display = "none"
+    starters.style.display = "none"
+    dinner.style.display = "none"
+    lunch.style.display ="block"
+    option1.style.borderBottom = "1px solid gray"
+    option2.style.borderBottom = "1px solid gray"
+    option3.style.borderBottom = "1px solid #ce1212"
+    option4.style.borderBottom = "1px solid gray"
+})
+option4.addEventListener("click", (e)=>
+{
+    e.preventDefault()
+    console.log("hi");
+    breake.style.display = "none"
+    lunch.style.display = "none"
+    starters.style.display = "none"
+    dinner.style.display ="block"
+    option1.style.borderBottom = "1px solid gray"
+    option2.style.borderBottom = "1px solid gray"
+    option3.style.borderBottom = "1px solid gray"
+    option4.style.borderBottom = "1px solid #ce1212"
+})
+
+
+
+
+
+
+
+
+

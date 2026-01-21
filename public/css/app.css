@@ -14874,6 +14874,45 @@ body {
     width: 30%;
   }
 }
+.reservation {
+  width: 70vw;
+  margin: auto;
+}
+
+.inputs {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-block: 20px;
+}
+
+.boxInput {
+  padding: 2vh 2vw;
+}
+
+#text {
+  width: 100%;
+  min-height: 30vh;
+  padding: 2vh 2vw;
+}
+
+.templat {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2vh;
+}
+
+.pic {
+  height: 50vw;
+}
+
+@media (min-width: 995px) {
+  .templat {
+    flex-direction: row;
+    gap: 30px;
+  }
+}
 .icons {
   padding: 1vh 1vw;
 }

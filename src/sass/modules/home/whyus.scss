@@ -10,15 +10,15 @@
     font-size: 32px;
     background-color: #fdf3f3;
     color: $sp_red;
-    padding: 72px;
+    // padding: ;
     border-radius: 50px;
     transition: all 0.3s ease;
 }
 
 .card
 {
-    min-height: 70vh;
-    
+   
+   
     padding-inline: 10vw;
 }
 .card:hover
@@ -31,3 +31,25 @@
     }
 }
 
+
+.whyUs
+{
+    background-color: #f2f2f2;  
+    width: 100%;
+}
+
+.whyUs *
+{
+    margin: auto;
+     width: 70%;
+     
+
+}
+
+@media (min-width: 995px) {
+    .whyUs
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}

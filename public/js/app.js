@@ -154,7 +154,7 @@ class Resto
     }
 }
 
-let ayoub = new Resto("ayoub ", "cnanc", "34567","scdqw","20:03","35")
+
 
 subBtn.addEventListener("click", (e) =>
 {
@@ -252,6 +252,9 @@ const init = ()=>
         i++;
     } 
 }
+
+
+
 
 // function for advancing forward to the next slide
 const forward = (e) =>
@@ -355,3 +358,12 @@ while(prev[i])
 
 
 
+const auto = () =>
+{
+    setInterval(() => {
+        next[0].click()
+        
+    }, 3000);
+}
+
+auto()

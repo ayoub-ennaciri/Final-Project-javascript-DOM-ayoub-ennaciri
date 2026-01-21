@@ -14980,8 +14980,30 @@ body {
     grid-column: 1/-1;
   }
 }
-.icons {
-  padding: 1vh 1vw;
+#footer {
+  background-color: #1f1f24;
+  color: white;
+}
+
+.social-links {
+  gap: 5px;
+}
+
+.social-links * {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #37373f;
+  border-radius: 50px;
+  color: #37373f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 300ms ease;
+}
+
+.social-links *:hover {
+  color: #ce1212;
+  border: 1px solid #ce1212;
 }
 
 /*# sourceMappingURL=app.css.map */

@@ -14791,6 +14791,89 @@ body {
   border-bottom: 1px solid gray;
 }
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.caroussel {
+  width: 80vw;
+  border: 8px solid black;
+  height: 70vh;
+  margin: auto;
+  overflow-x: auto;
+}
+
+.track {
+  display: flex;
+  flex: 0 0 100;
+  scroll-snap-type: mandatory;
+  /* transition: all 0.4s ease ; */
+  width: 100%;
+  height: 100%;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+}
+
+.chefCard {
+  transition: all 200ms ease;
+  box-shadow: 1px 1px 5px;
+  border-radius: 5px;
+  padding-bottom: 10vh;
+  width: 100vw;
+}
+
+.chefsContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: auto;
+  width: 70vw;
+  gap: 25px;
+}
+
+.chefname {
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+
+.chefp {
+  font-style: italic;
+  font-size: 14px;
+  padding-top: 15px;
+  line-height: 26px;
+}
+
+.chefstat {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.chefCard:hover {
+  scale: 105%;
+}
+
+@media (min-width: 993px) {
+  .chefsContainer {
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 90vw;
+  }
+  .chefCard {
+    width: 30%;
+  }
+}
 .icons {
   padding: 1vh 1vw;
 }

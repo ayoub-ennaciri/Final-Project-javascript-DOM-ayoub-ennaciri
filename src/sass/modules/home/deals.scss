@@ -1,0 +1,53 @@
+.event-item h3{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: #ffffff;
+    font-family: amatic;
+}
+
+.event-item div{
+    color: #ffffff;
+  border-bottom: 2px solid var(--accent-color);
+  font-size: 32px;
+  font-weight: 700;
+}
+
+
+
+#dealSlide1
+{
+    background-image: url(../../../../public/images/events-1.jpg);
+    
+      filter: brightness(0.8);
+}
+#dealSlide2
+{
+    background-image: url(../../../../public/images/events-2.jpg);
+    
+      filter: brightness(0.8);
+}
+#dealSlide3
+{
+    background-image: url(../../../../public/images/events-3.jpg);
+      filter: brightness(0.8);
+}
+.dealii
+{
+    width: 100vw;
+    height: 80vh;
+    padding: 30px;
+}
+
+.me
+{
+    position: absolute;
+    bottom: 0;
+    color: white;
+    width: 80%;
+}
+
+.me p
+{
+    width: 70%;
+}

@@ -367,3 +367,13 @@ const auto = () =>
 }
 
 auto()
+
+const auto1 = () =>
+{
+    setInterval(() => {
+        next[1].click()
+        
+    }, 3000);
+}
+
+auto1()

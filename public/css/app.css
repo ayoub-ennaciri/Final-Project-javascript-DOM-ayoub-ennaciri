@@ -15011,4 +15011,32 @@ body {
   border: 1px solid #ce1212;
 }
 
+.bookk {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(128, 128, 128, 0.301);
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+}
+
+.bookContainer {
+  text-align: center;
+  padding: 20px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 80%;
+}
+
+.bookContainer div input {
+  width: 80%;
+  height: 40px;
+}
+
 /*# sourceMappingURL=app.css.map */

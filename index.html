@@ -12,7 +12,7 @@
   <div class="z-3 navbar bg-white position-sticky top-0 px-1 py-1 px-md-3 py-md-1 col-lg px-lg-3 py-lg-1 d-flex align-items-center justify-content-between">
     <div class=""><a href=""><h1 class="yummy">Yummy<span class="red">.</span></h1></a></div>
     
-    <div id="sideContenair gap-1">
+    <div class="sideContenaire gap-1">
       <i class="X  bi bi-text-sp_red fs-4"></i>
       <nav class="sideMenu links d-xl-flex">
         <a href="" class="text-gray ">Home</a>
@@ -27,7 +27,7 @@
     </div>
 
     <div class="d-flex align-items-center ">
-      <button class="bookAtable">Book a Table </button>
+      <button class="bookAtable active">Book a Table </button>
       <a href=""><i class="burgerIcon d-xl-none bi bi-list"></i></a>
     </div>
   </div>
@@ -643,6 +643,25 @@
     </div>
 
   </footer>
+
+  <div class="bookk ">
+    <div class="bookContainer">
+      <h1 class="">Book a table</h1>
+      <div class="align-items-center justify-content-center row gap-1">
+        <input id="Cname" class="in col-6 " placeholder="Your Name " type="text" >
+        <input id="Cemail" class="in col-6 " placeholder="Your Email " type="email" >
+        <input id="Cnumber" class="in col-6 " placeholder="Your Number " type="text" >
+        <input id="Cdate" class="in col-6 " placeholder="Your Name " type="date" >
+        <input id="Ctime" class="in col-6 " placeholder="Your Name " type="time" >
+        <input id="Cpeople" class="in col-6 " placeholder="# people " type="number" >
+      </div>
+      <div class="d-flex mt-1 gap-3 align-items-center justify-content-center">
+        <button id="submit" class="bookAtable ">reserve</button>
+        <button id="cancel" class="bookAtable e">cancel</button>
+      </div>
+      <h4 id="message"></h4>
+    </div>
+  </div>
 
   <script src="./public/js/app.js"></script>
 </body>

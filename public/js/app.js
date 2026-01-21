@@ -1,5 +1,5 @@
 let sideMenu = document.querySelector(".sideMenu")
-let sideContenair = document.querySelector("#sideContenair")
+let sideContenair = document.querySelector(".sideContenaire")
 let burgerIcon = document.querySelector(".burgerIcon")
 let X = document.querySelector(".X")
 
@@ -122,6 +122,82 @@ option4.addEventListener("click", (e)=>
     option3.style.borderBottom = "1px solid gray"
     option4.style.borderBottom = "1px solid #ce1212"
 })
+
+// *book modal
+
+let book = document.querySelector(".bookk")
+let bookContainer = book.querySelector(".bookContainer");
+let input = book.querySelectorAll(".in");
+let smiya = book.querySelector("#Cname");
+let email = book.querySelector("#Cemail");
+let number = book.querySelector("#Cnumber");
+let date = book.querySelector("#Cdate");
+let time = book.querySelector("#Ctime");
+let people = book.querySelector("#Cpeople");
+let subBtn = book.querySelector("#submit");
+let message = book.querySelector("#message");
+let canlBtn = book.querySelector("#cancel");
+let active = document.querySelector(".active")
+
+class Resto
+{
+    static book = []
+    constructor(name,email,number,date,time,people)
+    {
+        this.name = name
+        this.email = email
+        this.number = number
+        this.date = date
+        this.time = time
+        this.people = people
+        Resto.book.push(this)
+    }
+}
+
+let ayoub = new Resto("ayoub ", "cnanc", "34567","scdqw","20:03","35")
+
+subBtn.addEventListener("click", (e) =>
+{
+    // console.log("hi");
+    if(smiya.value == "" || email.value == "" || number.value == "" || date.value == "" || time.value == "" || people.value == ""  )
+    {
+        console.log("hna");
+        message.setAttribute("class", "text-danger")
+        message.textContent = "fill all feilds"
+        return
+    }
+
+    console.table(Resto.book);
+    console.log(time.value);
+    console.log(Resto.book.findIndex(e => e.time == time.value ));
+    if(Resto.book.findIndex(e => e.time == time.value) != -1)
+    {
+        console.log("hi");
+        message.setAttribute("class", "text-danger")
+        message.textContent = "cant book at this time alredy taken"
+    }
+    else
+    {
+        new Resto(smiya.value,email.value,number.value,date.value,time.value,people.value);
+        message.setAttribute("class", "text-success")
+        message.textContent = "booked successfully"
+    }
+
+
+
+
+})
+
+active.addEventListener("click",  ()=>
+{
+    book.style.display ="flex"
+})
+
+canlBtn.addEventListener("click" , (e)=>{
+    book.style.display ="none"
+})
+
+
 
 
 // *testimonials

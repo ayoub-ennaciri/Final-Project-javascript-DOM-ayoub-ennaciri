@@ -1,0 +1,85 @@
+.contactContain
+{
+    display: grid;
+    grid-template-columns: 1fr ;
+    width: 80%;
+    text-align: start;
+    gap: 20px;
+}
+
+.contactCard
+{
+    padding: 10px 10px;
+    width: 100%;
+    box-shadow: 1px 1px 5px;
+    background-color: white; 
+    gap: 20px;
+}
+
+.ss
+{
+    width: 56px;
+    height: 56px;
+    font-size: 24px;
+    color: white;
+    background-color: $sp_red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+}
+
+.contactItem
+{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.sendCont
+{
+
+    padding: 10px 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    width: 80%;
+    margin:auto;
+    gap:20px;
+    justify-content: center;
+    background-color: white;
+    box-shadow: 1px 1px 3px;
+}
+
+.sendCont *
+{
+    padding: 2px 10px;
+}
+
+
+@media (min-width:760px) {
+
+    .contactContain
+    {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .sendCont
+    {
+        grid-template-columns: 1fr 1fr;
+
+    }
+    
+    .sendCont  .one
+    {
+        grid-column: 1 / -1;
+    }
+
+    .sendCont  textarea
+    {
+        grid-column: 1 / -1;
+    }
+    .sendCont  a
+    {
+        grid-column: 1 / -1;
+    }
+}

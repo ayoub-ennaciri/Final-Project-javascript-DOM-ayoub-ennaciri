@@ -166,7 +166,7 @@ const init = ()=>
                     let radio = document.createElement("input")
                     radio.setAttribute("type","radio")
                     radio.setAttribute("data-radio",`car-radio${i}`)
-                    
+                    radio.setAttribute("data-radio",`car-radio${i}`)
                     radio.setAttribute("name",`radio${i}`)
                     caroussel[i].append(radio)
                     j++;
